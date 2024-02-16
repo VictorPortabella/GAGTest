@@ -149,7 +149,7 @@ TArray<FVector> UGT_AILibrary::SmoothPath(AActor* WorldContextActor, FNavPathSha
 	{
 		//Draw OrigPathPoints in Blue
 		TArray<FVector> OrigPathPointsLocation;
-		for (FNavPathPoint PathPoint : PathPoints)
+		for (const FNavPathPoint& PathPoint : PathPoints)
 		{
 			OrigPathPointsLocation.Add(PathPoint.Location);
 		}
